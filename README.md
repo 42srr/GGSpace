@@ -1,4 +1,4 @@
-# GGSpace_Server
+# GGSpace
 동아리 관리 애플리케이션
 ---
 ## 개발 동기
