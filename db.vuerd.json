@@ -1,0 +1,253 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -19,
+    "scrollLeft": 0,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "User",
+        "comment": "",
+        "columns": [
+          {
+            "name": "id",
+            "comment": "서버 고유 아이디",
+            "dataType": "uint",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 87.55294799804688,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "223e42dc-d741-4559-855a-f1251e0bf871"
+          },
+          {
+            "name": "intra_id",
+            "comment": "42 인트라 아이디",
+            "dataType": "String",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 90.30892944335938,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bcc4f9d3-44a3-46b5-b8cd-8c2105b35305"
+          },
+          {
+            "name": "department",
+            "comment": "소속 파트",
+            "dataType": "ENUM",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 66.42791748046875,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2d2c4855-4513-404d-99e3-8742e5dc0505"
+          },
+          {
+            "name": "role",
+            "comment": "관리자 역할",
+            "dataType": "ENUM",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "af633f99-2ff7-4ff5-a458-36d2a9e0def7"
+          },
+          {
+            "name": "is_freeze",
+            "comment": "프리즈 여부",
+            "dataType": "BOOLEAN",
+            "default": "false",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 61.64396667480469,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9dd0d266-c090-4841-963c-c838a7b258d9"
+          },
+          {
+            "name": "penalty_points",
+            "comment": "패널티 포인트",
+            "dataType": "INT",
+            "default": "0",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.71485900878906,
+              "widthComment": 72.88896179199219,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "624108d5-b6bd-4ac4-bac6-f9d6711ed1e9"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 48.3333,
+          "top": 50.8889,
+          "zIndex": 6,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "9429873c-e2d9-4abd-9395-14adec331ef6"
+      },
+      {
+        "name": "Study",
+        "comment": "",
+        "columns": [],
+        "ui": {
+          "active": false,
+          "left": 605,
+          "top": 49,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "85311f4b-916b-417d-9b73-15a079f5fe1c"
+      },
+      {
+        "name": "Dev",
+        "comment": "",
+        "columns": [],
+        "ui": {
+          "active": false,
+          "left": 47,
+          "top": 313,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "5cf89f06-a2f9-4114-93ca-3ba9a32ed480"
+      },
+      {
+        "name": "Announce",
+        "comment": "",
+        "columns": [],
+        "ui": {
+          "active": false,
+          "left": 540,
+          "top": 309,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "b71aa1b3-617b-4ccc-b1a3-59e39f3f4003"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": []
+  }
+}
