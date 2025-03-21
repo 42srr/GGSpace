@@ -27,7 +27,7 @@ public class StudyRepositoryTest {
     @PersistenceContext
     EntityManager em;
 
-    @DisplayName("공지사항을 저장 및 조회할 수 있다.")
+    @DisplayName("스터디를 저장 및 조회할 수 있다.")
     @Test
     void saveAndFind() {
         //given
@@ -51,7 +51,7 @@ public class StudyRepositoryTest {
         assertThat(findStudy.getUpdatedAt()).isEqualTo(study.getUpdatedAt());
     }
 
-    @DisplayName("공지사항 조회시 null을 조회할 수 없다.")
+    @DisplayName("스터디 조회시 null을 조회할 수 없다.")
     @Test
     void findByNull() {
         assertThatThrownBy(() -> repository.findById(null))
