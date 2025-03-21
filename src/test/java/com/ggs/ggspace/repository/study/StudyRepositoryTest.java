@@ -24,7 +24,6 @@ public class StudyRepositoryTest {
 
     @Autowired
     StudyRepository repository;
-
     @PersistenceContext
     EntityManager em;
 
