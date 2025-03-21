@@ -1,4 +1,4 @@
-package com.ggs.ggspace.domain.announcement;
+package com.ggs.ggspace.domain.announce;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
