@@ -16,16 +16,16 @@ public class Freeze {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-    private Timestamp start;
-    private Timestamp end;
+    private Timestamp startTime;
+    private Timestamp endTime;
     private Timestamp createdAt;
 
     @Builder
-    private Freeze(Timestamp start, Timestamp end, Timestamp createdAt) {
-        this.start = start;
-        this.end = end;
+    private Freeze(Timestamp startTime, Timestamp endTime, Timestamp createdAt) {
+        this.startTime = startTime;
+        this.endTime = endTime;
         this.createdAt = createdAt;
     }
 }
