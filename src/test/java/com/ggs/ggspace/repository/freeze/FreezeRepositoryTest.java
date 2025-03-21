@@ -3,6 +3,7 @@ package com.ggs.ggspace.repository.freeze;
 import com.ggs.ggspace.domain.freeze.Freeze;
 import com.ggs.ggspace.domain.user.Role;
 import com.ggs.ggspace.domain.user.User;
+import com.ggs.ggspace.repository.exception.common.FindByNullException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.transaction.Transactional;
@@ -16,6 +17,7 @@ import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 @SpringBootTest
 @Transactional
@@ -48,6 +50,13 @@ public class FreezeRepositoryTest {
         assertThat(findFreeze.getStartTime()).isEqualTo(freeze.getStartTime());
         assertThat(findFreeze.getEndTime()).isEqualTo(freeze.getEndTime());
         assertThat(findFreeze.getCreatedAt()).isEqualTo(freeze.getCreatedAt());
+    }
+
+    @DisplayName("freeze 조회시 null을 조회할 수 없다.")
+    @Test
+    void findByNull() {
+        assertThatThrownBy(() -> repository.findById(null))
+                .isInstanceOf(FindByNullException.class);
     }
 
 }
