@@ -4,7 +4,10 @@ import com.ggs.ggspace.domain.announce.Announce;
 import com.ggs.ggspace.repository.exception.common.FindByNullException;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
+import lombok.Builder;
 import org.springframework.stereotype.Repository;
+
+import java.sql.Timestamp;
 
 /**
  * @TODO
@@ -24,4 +27,5 @@ public class AnnounceRepository {
             throw new FindByNullException("공지 : id 조회시 null 입력 불가");
         return em.find(Announce.class, id);
     }
+
 }
