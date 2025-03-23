@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggs.ggspace.repository.club.ClubRepositoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-03-23T14:00:23" hostname="jeonjun-wan-ui-MacBookPro.local" time="0.969">
+  <properties/>
+  <testcase name="동아리 조회시 null을 조회할 수 없다." classname="com.ggs.ggspace.repository.club.ClubRepositoryTest" time="0.829"/>
+  <testcase name="동아리를 저장 및 조회 할 수 있다." classname="com.ggs.ggspace.repository.club.ClubRepositoryTest" time="0.138"/>
+  <system-out><![CDATA[23:00:18.950 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.ggs.ggspace.repository.club.ClubRepositoryTest]: ClubRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:00:19.132 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.ggs.ggspace.GgSpaceApplication for test class com.ggs.ggspace.repository.club.ClubRepositoryTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2025-03-23T23:00:19.647+09:00  INFO 22907 --- [    Test worker] c.g.g.r.club.ClubRepositoryTest          : Starting ClubRepositoryTest using Java 21.0.5 with PID 22907 (started by joojeon in /Users/joojeon/GGSpace)
+2025-03-23T23:00:19.649+09:00  INFO 22907 --- [    Test worker] c.g.g.r.club.ClubRepositoryTest          : The following 1 profile is active: "test"
+2025-03-23T23:00:20.334+09:00  INFO 22907 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-23T23:00:20.359+09:00  INFO 22907 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2025-03-23T23:00:20.801+09:00  INFO 22907 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-23T23:00:21.017+09:00  INFO 22907 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:b5c497a3-b540-45c2-ad88-7919a3480494 user=SA
+2025-03-23T23:00:21.020+09:00  INFO 22907 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-23T23:00:21.097+09:00  INFO 22907 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-23T23:00:21.152+09:00  INFO 22907 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-23T23:00:21.190+09:00  INFO 22907 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-23T23:00:21.544+09:00  INFO 22907 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-23T23:00:21.659+09:00  INFO 22907 --- [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-23T23:00:22.751+09:00  INFO 22907 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-23T23:00:22.812+09:00  INFO 22907 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-23T23:00:23.063+09:00  WARN 22907 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-23T23:00:23.408+09:00  WARN 22907 --- [    Test worker] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2025-03-23T23:00:23.615+09:00  INFO 22907 --- [    Test worker] c.g.g.r.club.ClubRepositoryTest          : Started ClubRepositoryTest in 4.272 seconds (process running for 5.753)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/Users/joojeon/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.15.11/a38b16385e867f59a641330f0362ebe742788ed8/byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
